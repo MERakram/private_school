@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/get_navigation.dart';
-import 'package:private_school/pages/homepage.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:private_school/Pages/homePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +12,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      theme: ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.dark,
+        primarySwatch: Colors.orange,
+        accentColor: const Color.fromARGB(255, 209, 119, 66),
+      ),
+      home: homePage(),
+
     );
   }
 }
-
-
