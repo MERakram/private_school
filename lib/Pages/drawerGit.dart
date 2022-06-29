@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:get/get.dart';
+import 'package:private_school/Pages/homePage.dart';
 import '../Constants/Constants.dart';
 import '../Models/CDM.dart';
 import '../Widgets/Widgets.dart';
@@ -39,17 +40,19 @@ class _ComplexDrawerPageGitState extends State<ComplexDrawerPageGit> {
   }
 
   Widget body(){
-    return Center(
-      child: Container(
-        foregroundDecoration: BoxDecoration(
-          color: Colorz.complexDrawerBlack,
-          backgroundBlendMode: BlendMode.saturation,
-        ),
-        child: FlutterLogo(
-          size: 150,
-        ),
-      ),
-    );
+    return HomePage()
+    //   Center(
+    //   child: Container(
+    //     foregroundDecoration: BoxDecoration(
+    //       color: Colorz.complexDrawerBlack,
+    //       backgroundBlendMode: BlendMode.saturation,
+    //     ),
+    //     child: FlutterLogo(
+    //       size: 150,
+    //     ),
+    //   ),
+    // )
+    ;
   }
 }
 

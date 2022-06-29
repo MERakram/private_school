@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:private_school/Pages/homePage.dart';
+import 'package:private_school/Pages/drawerGit.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         accentColor: const Color.fromARGB(255, 209, 119, 66),
       ),
-      home: homePage(),
+      home: ComplexDrawerPageGit(),
 
     );
   }
